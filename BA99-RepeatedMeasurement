@@ -1,0 +1,11 @@
+# Bland and Altman 1999 Repeated Measurements
+#
+# In cases where there are repeated measurements by each of the two methods on the
+# same subjects , Bland Altman suggest calculating the mean for each method on each
+# subject and use these pairs of means to compare the two methods.
+#
+###################################################################################
+#
+# Data Set : JSR Blood Data
+#
+###################################################################################
