@@ -1,4 +1,65 @@
 \chapter{The Bland Altman Plot}
+
+\section{Bland Altman Methodology}
+
+\subsection{Bias}
+Bland and Altman define bias a \emph{a consistent tendency for one
+method to exceed the other} [$3$] and propose estimating its value
+by determining the mean of the differences. The variation about
+this mean shall be estimated by the  standard deviation of the
+differences. Bland and Altman remark that these estimates are based on the
+assumption that bias and variability are constant throughout the
+range of measures.
+
+\section{The Bland Altman Plot}
+In 1986 Bland and Altman published a paper in the Lancet proposing
+the difference plot for use for method comparison purposes. It has
+proved highly popular ever since. This is a simple, and widely
+used , plot of the differences of each data pair, and the
+corresponding average value. An important requirement is that the
+two measurement methods use the same scale of measurement.
+\\
+Variations of the Bland Altman plot is the use of ratios, in the
+place of differences.
+\begin{equation}
+D_{i} = X_{i} - Y_{i}   \label{BA01}
+\end{equation}
+Altman and Bland suggest plotting the within subject differences $
+D = X_{1} - X_{2} $ on the ordinate versus the average of $x_{1}$
+and  $x_{2}$ on the abscissa.
+
+
+
+\subsection{Criticism of Bland Altman Plot}
+Unfortunately the Bland-Altman plot has a fatal flaw: it indicates
+incorrectly that there are systematic differences or bias in the
+relationship between two measures, when one has been calibrated
+against the other. (Hopkins)
+\subsection{Treatment of Outliers}
+Bland and Altman attend to the issue of outliers in their 1986
+paper, wherein they present a data set with an extreme outlier
+
+
+
+\section{Paired T tests}
+This method can be applied to test for statisitcally significant
+deviations in bias. This method can be potentially misused for
+method comparison studies.
+\\It is a poor measure of agreement when the rater's measurements
+are perpendicular to the line of equality[Hutson et al]. In this
+context, an average difference of zero between the two raters, yet
+the scatter plot displays strong negative correlation.
+
+\subsection*{Components in assessing agreement}
+
+\begin{enumerate}
+\item The degree of linear relationship between the two sets \item
+The amount of bias as represented by the difference in the
+means\item The Differences in the two variances.
+\end{enumerate}
+
+
+%----------------------------------------------------------------------------------%
 \section{Bland Altman Plots}
 The issue of whether two measurement methods are comparable to the
 extent that they can be used interchangeably with sufficient
@@ -17,26 +78,18 @@ that a simple approach is preferable to complex approaches,
 \emph{"especially when the results must be explained to
 non-statisticians"} \citep*{BA83}.
 
-The first step recommended which the authors argue should be
-mandatory is construction of a simple scatter plot of the data.
-The line of equality ($X=Y$) should also be shown, as it is
-necessary to give the correct interpretation of how both methods
-compare. A scatter plot of the Grubbs data is shown in figure 2.1.
-A visual inspection thereof confirms the previous conclusion that
-there is an inter method bias present, i.e. Fotobalk device has a
+The first step recommended which the authors argue should be mandatory is construction of a simple scatter plot of the data. The line of equality ($X=Y$) should also be shown, as it is
+necessary to give the correct interpretation of how both methods compare. A scatter plot of the Grubbs data is shown in figure 2.1.
+A visual inspection thereof confirms the previous conclusion that there is an inter method bias present, i.e. Fotobalk device has a
 tendency to record a lower velocity.
 
 
 
 In light of shortcomings associated with scatterplots,
-\citet*{BA83} recommend a further analysis of the data. Firstly
-differences of measurements of two methods on the same subject
-should  be calculated, and then the average of those measurements
-(Table 1.1). The averages of the two measurements is considered by
-Bland and Altman to the best estimate for the unknown true value.
-Importantly both methods must measure with the same units. These
-results are then plotted, with differences on the ordinate and
-averages on the abscissa (figure 1.2). \citet*{BA83}express the
+\citet*{BA83} recommend a further analysis of the data. Firstly differences of measurements of two methods on the same subject
+should  be calculated, and then the average of those measurements (Table 1.1). The averages of the two measurements is considered by
+Bland and Altman to the best estimate for the unknown true value. Importantly both methods must measure with the same units. These
+results are then plotted, with differences on the ordinate and averages on the abscissa (figure 1.2). \citet*{BA83}express the
 motivation for this plot thusly:
 \begin{quote}
 "From this type of plot it is much easier to assess the magnitude
@@ -83,13 +136,10 @@ methods on the same subjects , Bland Altman suggest calculating
 the mean for each method on each subject and use these pairs of
 means to compare the two methods.
 \\
-The estimate of bias will be unaffected using this approach, but
-the estimate of the standard deviation of the differences will be
-too small, because of the reduction of the effect of repeated
+The estimate of bias will be unaffected using this approach, but the estimate of the standard deviation of the differences will be too small, because of the reduction of the effect of repeated
 measurement error. Bland Altman propose a correction for this.
 \\
-Carstensen attends to this issue also, adding that another
-approach would be to treat each repeated measurement separately.
+Carstensen attends to this issue also, adding that another approach would be to treat each repeated measurement separately.
 
 \subsection{Criticism of Bland Altman Plot}
 Hopkins[$8$] argues that the plot indicates incorrectly that there
@@ -112,47 +162,6 @@ distributed, it can be transformed.
 
 
 
-\chapter{REGRESSION}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Regression
-\section{Model II Regression}
-\subsection{Simple Linear Regression} Simple Linear Regression is  well
-known statistical technique , wherein estimates for slope and
-intercept of the line of best fit are derived according to the
-Ordinary Least Square (OLS) principle.This method is known to
-Cornbleet and Cochrane as Model I regression.
-\\
-\\
-In Model I regression, the independent variable is assumed to be
-measured without error. For method comparison studies, both sets
-of measurement must be assumed to be measured with imprecision and
-neither case can be taken to be a reference method. Arbitrarily
-selecting either method as the reference will yield two
-conflicting outcomes. A fitting based on '$X$ on $Y$' will give
-inconsistent results with a fitting based on '$Y$ on $X$'.
-Consequently model I regression is inappropriate for such cases.
-\\
-\\
-Conversely, Cornbleet Cochrane state that when the independent
-variable $X$ is a precisely measured reference method, Model I
-regression may be considered suitable. They qualify this statement
-by referring the $X$ as \emph{the 'correct' value}, tacitly
-implying that there must still be some measurement error present.
-The validity of this approach has been disputed elsewhere.
-
-
-
-
-\subsection{Model II regression}
-Cochrane and Cornbleet argue for the use of methods that based on
-the assumption that both methods are imprecisely measured ,and
-that yield a fitting that is consistent with both '$X$ on $Y$' and
-'$Y$ on $X$' formulations. These methods uses alternatives to the
-OLS approach to determine the slope and intercept.
-\\
-They describe three such alternative methods of regression; Deming
-, Mandel, and Bartlett regression. Collectively the authors refer
-to these approaches as Model II regression techniques.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Distribution of Maxima} It is possible to use Order
 Statistics theory to assess conditional probabilities. With two
