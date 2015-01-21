@@ -1,0 +1,20 @@
+\contentsline {subsection}{\numberline {0.1}Relevance of Repeatability}{2}
+\contentsline {section}{\numberline {1}Repeatability}{2}
+\contentsline {subsection}{\numberline {1.1}Repeatability and gold standards}{2}
+\contentsline {section}{\numberline {2}Add Ins}{3}
+\contentsline {section}{\numberline {3}Bland and Altman}{3}
+\contentsline {section}{\numberline {4}Carstensen}{4}
+\contentsline {subsection}{\numberline {4.1}Repeatability}{5}
+\contentsline {section}{\numberline {5}Reproducibility}{5}
+\contentsline {subsection}{\numberline {5.1}2 The Coefficient of Repeatability}{5}
+\contentsline {section}{\numberline {6}Repeatability}{6}
+\contentsline {section}{\numberline {7}Repeatability}{6}
+\contentsline {subsection}{\numberline {7.1}Repeatability}{7}
+\contentsline {subsection}{\numberline {7.2}Bland and Altman 1999}{8}
+\contentsline {subsection}{\numberline {7.3}Notes from BXC Book (chapter 9)}{8}
+\contentsline {section}{\numberline {8}Coefficient of Repeatability}{9}
+\contentsline {subsection}{\numberline {8.1}Repeatability}{9}
+\contentsline {subsection}{\numberline {8.2}Coefficient of Repeatability}{9}
+\contentsline {subsection}{\numberline {8.3}Note 1: Coefficient of Repeatability}{9}
+\contentsline {subsection}{\numberline {8.4}Repeatability coefficient}{10}
+\contentsline {subsection}{\numberline {8.5}Repeatability}{11}

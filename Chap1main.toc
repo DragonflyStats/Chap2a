@@ -1,7 +1,0 @@
-\contentsline {chapter}{\numberline {1}Bland-Altman Methodology}{2}
-\contentsline {section}{\numberline {1.1}Bland-Altman Plots}{3}
-\contentsline {section}{\numberline {1.2}Limits of Agreement}{4}
-\contentsline {subsection}{\numberline {1.2.1}Prevalence of the Bland-Altman plot}{5}
-\contentsline {section}{\numberline {1.3}Bartko's Ellipse}{6}
-\contentsline {section}{\numberline {1.4}Coefficient of Repeatability}{8}
-\contentsline {subsection}{\numberline {1.4.1}Repeatability}{8}
