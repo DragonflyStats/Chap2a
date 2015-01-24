@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  24 JAN 2015 19:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  23 JAN 2015 09:02
 entering extended mode
-**AlternativeGraphicalApproaches.tex
-(C:\Users\Kevin\Documents\GitHub\MCS-Chap2\AlternativeGraphicalApproaches.tex
+**LimitsOfAgreement.tex
+(C:\Users\Kevin\Documents\GitHub\MCS-Chap2\LimitsOfAgreement.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -155,20 +155,19 @@ Package `vmargin', V2.2, <1999/06/01>
 \c@notation=\count97
 \c@remark=\count98
 \c@example=\count99
-))
-(C:\Users\Kevin\Documents\GitHub\MCS-Chap2\AlternativeGraphicalApproaches.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+)) (C:\Users\Kevin\Documents\GitHub\MCS-Chap2\LimitsOfAgreement.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 
 (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -184,72 +183,67 @@ LaTeX Font Info:    ... okay on input line 8.
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks26
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 13.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<GrubbsBartko.jpeg, id=8, 1027.84pt x 694.595pt>
-File: GrubbsBartko.jpeg Graphic file (type jpg)
- <use GrubbsBartko.jpeg>
-Package pdftex.def Info: GrubbsBartko.jpeg used on input line 27.
-(pdftex.def)             Requested size: 369.88582pt x 249.95862pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+<GrubbsBAplot-LOA.jpeg, id=10, 1027.84pt x 694.595pt>
+File: GrubbsBAplot-LOA.jpeg Graphic file (type jpg)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
- [2 <C:/Users/Kevin/Documents/GitHub/MCS-Chap2/GrubbsBartko.jpeg>] [3] [4] [5] 
-[6]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ˜ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
- [7]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
+<use GrubbsBAplot-LOA.jpeg>
+Package pdftex.def Info: GrubbsBAplot-LOA.jpeg used on input line 57.
+(pdftex.def)             Requested size: 355.65944pt x 240.34564pt.
+ [2 <C:/Users/Kevin/Documents/GitHub/MCS-Chap2/GrubbsBAplot-LOA.jpeg>] [3] [4] 
+[5] [6]
 
-(C:\Users\Kevin\Documents\GitHub\MCS-Chap2\AlternativeGraphicalApproaches.bbl
-[8]) [9
+Package natbib Warning: Citation `ludbrook' on page 7 undefined on input line 3
+03.
+
+
+Package natbib Warning: Citation `bxc2008' on page 7 undefined on input line 31
+0.
+
+[7] (C:\Users\Kevin\Documents\GitHub\MCS-Chap2\LimitsOfAgreement.bbl [8]
+[9
 
 ]
-(C:\Users\Kevin\Documents\GitHub\MCS-Chap2\AlternativeGraphicalApproaches.aux) 
-) 
+Missing character: There is no – in font cmr12!
+Missing character: There is no – in font cmr12!
+)
+
+Package natbib Warning: There were undefined citations.
+
+[10] (C:\Users\Kevin\Documents\GitHub\MCS-Chap2\LimitsOfAgreement.aux) ) 
 Here is how much of TeX's memory you used:
- 2309 strings out of 493921
- 30433 string characters out of 3144875
- 79615 words of memory out of 3000000
- 5577 multiletter control sequences out of 15000+200000
- 10618 words of font info for 40 fonts, out of 3000000 for 9000
+ 2335 strings out of 493921
+ 30568 string characters out of 3144875
+ 81327 words of memory out of 3000000
+ 5606 multiletter control sequences out of 15000+200000
+ 10925 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,5n,28p,467b,211s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on AlternativeGraphicalApproaches.pdf (9 pages, 204131 bytes).
+ 43i,9n,28p,369b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on LimitsOfAgreement.pdf (10 pages, 243902 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

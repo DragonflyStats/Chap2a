@@ -1,29 +1,33 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Chap2main.aux
 The style file: chicago.bst
 Case mismatch error between cite keys bxc2008 and BXC2008
----line 79 of file Chap2main.aux
+---line 169 of file Chap2main.aux
  : \citation{bxc2008
  :                  }
 I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 171 of file Chap2main.aux
+ : \bibdata
+ :         {DB-txfrbib}
+I'm skipping whatever remains of this command
 Case mismatch error between cite keys dunnSEME and DunnSEME
----line 116 of file Chap2main.aux
+---line 219 of file Chap2main.aux
  : \citation{dunnSEME
  :                   }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys barnhart and Barnhart
----line 134 of file Chap2main.aux
+---line 237 of file Chap2main.aux
  : \citation{barnhart
  :                   }
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 140 of file Chap2main.aux
+Illegal, another \bibdata command---line 243 of file Chap2main.aux
  : \bibdata
  :         {DB-txfrbib}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 179 of file Chap2main.aux
+Illegal, another \bibdata command---line 287 of file Chap2main.aux
  : \bibdata
  :         {DB-txfrbib}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 204 of file Chap2main.aux
+Illegal, another \bibdata command---line 317 of file Chap2main.aux
  : \bibdata
  :         {DB-txfrbib}
 I'm skipping whatever remains of this command
@@ -45,4 +49,4 @@ Warning--no author, editor, or organization in IUPAC
 Warning--page numbers missing in BXC2008
 Warning--empty year in Cohen
 Warning--no author, editor, or organization in IUPAC
-(There were 8 error messages)
+(There were 9 error messages)

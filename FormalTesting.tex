@@ -1,0 +1,30 @@
+\documentclass[Chap2main.tex]{subfiles}
+
+% Load any packages needed for this document
+
+\begin{document}
+
+
+
+\section{Formal Testing}
+The Bland-Altman plot is a simple tool for inspection of the data,
+but in itself it offers no formal testing procedure in this
+regard. To this end, the approach proposed by \citet{BA83} is a
+formal test on the Pearson correlation coefficient  of casewise
+differences and means ($\rho_{AD}$). According to the authors,
+this test is equivalent to a well established tests for equality
+of variances, known as the `Pitman Morgan Test' \citep{Pitman,
+	Morgan}.
+
+For the Grubbs data, the correlation coefficient estimate
+($r_{AD}$) is 0.2625, with a 95\% confidence interval of (-0.366,
+0.726) estimated by Fishers 'r to z' transformation \citep{Cohen}.
+The null hypothesis ($\rho_{AD}$ =0) would fail to be rejected.
+Consequently the null hypothesis of equal variances of each method
+would also fail to be rejected.
+
+There has no been no further mention of this particular test in
+the subsequent article published by Bland and Altman, although
+\citet{BA99} refers to Spearmans' rank correlation coefficient.
+
+\end{document}

@@ -1,0 +1,14 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Altman}{Altman}{1978}]{AltmanEllipse}
+Altman, D. (1978).
+\newblock Plotting probability ellipses.
+\newblock {\em Journal of the Royal Statistical Society. Series C (Applied
+  Statistics)\/}~{\em 27\/}(3), 347--349.
+
+\bibitem[\protect\citeauthoryear{Bartko}{Bartko}{1994}]{Bartko}
+Bartko, J. (1994).
+\newblock Measures of agreement: A single procedure.
+\newblock {\em Statistics in Medicine\/}~{\em 13}, 737--745.
+
+\end{thebibliography}
