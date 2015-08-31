@@ -1,8 +1,22 @@
+\section{Normal linear mixed models}
 
-\documentclass[Chap4amain.tex]{subfiles}
-
-% Load any packages needed for this document
-\begin{document}
+The standard linear mixed effects model specifies
+\begin{equation}
+y = X \beta + Zb + \epsilon , 
+\label{lme:Model}
+\end{equation}
+where $y$ is a vector of $N$ observable random variables, $\beta$ is a vector of $p$ unknown parameters having fixed values (fixed effects), $X$ and $Z$ are $N \times p$ and $N \times q$ known matrices, and $b$ and $\epsilon$  are vectors of $q$ and $N,$ respectively, unobservable random variables (random effects) such that $\mathrm{E}(b)=0, \ \mathrm{E}(\epsilon)=0$
+and
+\[
+\mathrm{var}
+\pmatrix{
+  b \cr
+  \epsilon }  =
+\pmatrix{
+  D & 0 \cr
+  0 & \Sigma }
+\]
+where $D$ and $\Sigma$ are positive definite matrices parameterized by an unknown variance component parameter vector $ \theta.$
 %----------------------------------------------------------------------------------------%
 %----------------------------------------------------------------------------------------%
 \newpage
