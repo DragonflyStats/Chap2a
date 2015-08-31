@@ -1,0 +1,51 @@
+
+
+\subsubsection*{Henderson's equations}
+
+\cite{Henderson:1950} made the (ad-hoc) distributional assumptions $y|b \sim \mathrm{N} (X \beta + Zb, \Sigma)$ and $b \sim \mathrm{N}(0,D),$ and proceeded to maximize the joint density of $y$ and $b$
+\begin{equation}
+\left|
+\pmatrix{
+  D & 0 \cr
+  0 & \Sigma }
+  \right|^{-\frac{1}{2}}
+\exp
+\left\{ -\frac{1}{2}
+\pmatrix{
+  b \cr
+  y - X \beta -Zb
+  }^\prime
+\pmatrix{
+  D & 0 \cr
+  0 & \Sigma }^{-1}
+\pmatrix{
+  b \cr
+  y - X \beta -Zb
+  }
+\right\},
+\label{u&beta:JointDensity}
+\end{equation}
+with respect to $\beta$ and $b,$ which ultimately requires minimizing the criterion
+\begin{equation}
+(y - X \beta -Zb)'\Sigma^{-1}(y - X \beta -Zb) + b^\prime D^{-1}b. 
+\label{Henderson:Criterion}
+\end{equation}
+This leads to the solutions
+\begin{equation}
+\pmatrix{
+  X^\prime\Sigma^{-1}X & X^\prime\Sigma^{-1}Z
+  \cr
+  Z^\prime\Sigma^{-1}X & X^\prime\Sigma^{-1}X + D^{-1}
+  }
+\pmatrix{
+    \beta \cr
+  b
+  }
+  =
+\pmatrix{
+  X^\prime\Sigma^{-1}y \cr
+  Z^\prime\Sigma^{-1}y
+  }.
+\label{Henderson:Equations}
+\end{equation}
+\cite{Robi:BLUP:1991} points out that although \cite{Henderson:1950} initially referred to the estimates $\hat{\beta}$ and $\hat{b}$ from (\ref{Henderson:Equations}) as ``joint maximum likelihood estimates" \cite{Henderson:1973} later advised that these estimates should not be referred to as ``maximum likelihood" as the function being maximized in (\ref{Henderson:Criterion}) is a joint density rather than a likelihood function.
