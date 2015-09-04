@@ -1,3 +1,43 @@
+
+\section{LME Introduction}
+
+
+
+Henderson [1984a] shows that the solution to the mixed model equations
+\begin{equation}
+\left(
+  \begin{array}{cc}
+    X^{\prime}R^{-1}X & X^{\prime}R^{-1}Z \\
+    Z^{\prime}R^{-1}X & Z^{\prime}R^{-1}Z + G^{-1}\\
+  \end{array}
+\right)\left(
+         \begin{array}{c}
+           \boldsymbol{\beta} \\
+           \boldsymbol{b} \\
+         \end{array}
+       \right) = \left(
+                   \begin{array}{c}
+                     X^{\prime}R^{-1}y \\
+                     Z^{\prime}R^{-1}y \\
+                   \end{array}
+                 \right)
+\end{equation}
+gives a solution for which the estimate $\boldsymbol{b}$ of the fixed effects is equal to that obtained by generalized least squares.
+
+\begin{equation}
+\hat{\beta} = (\boldsymbol{X^{\prime}}\boldsymbol{V}^{-1}\boldsymbol{X})^{-1}\boldsymbol{X^{\prime}}\boldsymbol{V}^{-1}\boldsymbol{y}
+\end{equation}
+
+\citet{Henderson63} showed that
+the BLUP of $\boldsymbol{b}$ is
+
+\begin{equation}
+\boldsymbol{\hat{b}} = (\boldsymbol{D}\boldsymbol{Z}^{\prime}\boldsymbol{V})(\boldsymbol{y} - \boldsymbol{X}\hat{\beta})
+\end{equation}
+
+
+%------------------------------------------------------------------------------------%
+
 \subsubsection{Henderson's equations}
 Because of the dimensionality of V (i.e. $n \times n$) computing the inverse of V can be difficult. As a way around the this problem \citet{Henderson53, Henderson59,Henderson63,Henderson73,Henderson84a} offered a more simpler approach of jointly estimating $\hat{\beta}$ and $\hat{b}$.
 \cite{Henderson:1950} made the (ad-hoc) distributional assumptions $y|b \sim \mathrm{N} (X \beta + Zb, \Sigma)$ and $b \sim \mathrm{N}(0,D),$ and proceeded to maximize the joint density of $y$ and $b$
