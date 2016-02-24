@@ -1,54 +1,5 @@
 
 
-
-
-
-Contents
-Database
-SQLITE
-Installing
-Selecting
-Inserting
-MySQL
-Installing
-Selecting
-PostgreSQL
-RODBC
-Read MS Excel Files
-Reading and Writing Data
-Connections
-Examples
-Data Frames
-Determining Size
-Date/Time
-Parse a Date
-Dates and data.frames
-Format a Date
-Time Intervals
-Time Sequences
-Formulas
-Graphics
-Simple Plot
-Plot Multiple Timeseries
-Pause between Plots
-Plot a filled countour
-Examples
-Plot Least Squares Fit
-Plot ESRI Shapefile
-Clustering
-Package ''flexclust''
-Machine Learning/Statistical Learning
-Spatial data
-Work with shapefiles
-Timeseries
-Create a Timeseries
-Extending a Timeseries
-Debugging
-browser
-debug/undebug
-Random Data
-Generate a Random Matrix
-
 
 1. Database
 SQLITE
@@ -124,10 +75,10 @@ Windows
 Set system variable MYSQL_HOME (RMYSQL directory in R-directory e.g. C:\Programme\R\R-2.8.1\library\RMySQL)
 Directory defined above has to contain the client DLL for MySQL-Servers. A specific structure of subdirectories has to be created.
 
-Selecting
+#### Selecting
 library(RMySQL) roadid = 1234 laneid = 1 drv = dbDriver("MySQL") con = dbConnect(drv,dbname="flow_timeseries",user="123",pass="123",host="10.10.10.10") sql <- paste("SELECT * from timeseries WHERE roadid = ",roadid,"AND laneid = ",laneid,"ORDER BY day") res <- dbSendQuery(con,sql) data <- fetch(res, n = -1) dbDisconnect(con)
 
-PostgreSQL
+#### PostgreSQL
 Install the r-base postgres server dependencies
 
 sudo apt-get install r-base-dev postgresql-server-dev-8.3 sudo R
@@ -159,7 +110,7 @@ bzfile: local bzipped file
 url: remote file read via http
 socketConnection: socket for client/server programs
 
-Examples
+##### Examples
 Skip last lines of a data file (e.g. last two lines):
 con <- textConnection(rev(rev(readLines('data.txt'))[-(1:2)])) data <- read.table(con) close(con)
 Read data from gzip-compressed file:
@@ -174,6 +125,7 @@ df = data.frame(...) row_count = nrow(df) col_count = ncol(df) dim(df)
 R and its contributed packages have a number of datetime (i.e. date or date/time) classes:
 POSIX classes: POSIX classes refer to the two classes POSIXct, POSIXlt and their common super class POSIXt. These support times and dates including time zones and standard vs. daylight savings time.
 Date: Date is the newest R date class, introduced in R-1.9.0. It supports dates without times. Eliminating times simplifies dates substantially since not only are times, themselves, eliminated but the potential complications of timezones and daylight savings time vs. standard time need not be considered either. Date has an interface similar to the POSIX classes discussed below making it easy to move between them.
+
 chron: The CRAN-Package chron provides dates and times. There are no time zones or notion of daylight vs. standard time in chron which makes it simpler to use for most purposes than date/time packages that do employ time zones.
 References: R News, The Newsletter of the R Project, Volume 4/1, June 2004, ISSN 1609-3631, http://cran.r-project.org/doc/Rnews/Rnews_2004-1.pdf
 
@@ -194,6 +146,7 @@ data$time = as.POSIXct(strptime(data$time_string, "%H:%M:%S"))
 format(d1, "%a %Y/%m/%d") #[1] "So 2008/05/18" format(d2, "%A %Y/%m/%d") # [1] "Dienstag 2008/01/01"
 
 #### Time Intervals
+
 ```{r}
 b1 <- ISOdate(1977,7,13) 
 b2 <- ISOdate(2003,8,14) 
@@ -204,14 +157,27 @@ b2 - b1 # Time difference of 9528 days
 If an alternative unit of time is desired, the <tt>difftime</tt> function can be called, using the optional <tt>units=</tt> argument with any of the following values: "auto", "secs", "mins", "hours", "days", or "weeks".
 difftime(b2,b1,units="weeks") #Time difference of 1361.143 weeks
 
-Time Sequences
+#### Time Sequences
 The by=> argument to the seq function can be specified either as a difftime value, or in any units of time that the difftime function accepts, making it very easy to generate sequences of dates.
-seq(as.Date("1976-07-04"),by="days",length=10) # [1] "1976-07-04" "1976-07-05" "1976-07-06" "1976-07-07" "1976-07-08" [6] "1976-07-09" "1976-07-10" "1976-07-11" "1976-07-12" "1976-07-13" seq(as.Date("2000-06-01"),to=as.Date("2000-08-01"),by="2 weeks") # [1] "2000-06-01" "2000-06-15" "2000-06-29" "2000-07-13" "2000-07-27" seq(as.POSIXct("2009-03-23 00:00:00", tz="GMT"), length=96, by="15 mins") # [1] "2009-03-23 00:00:00 GMT" "2009-03-23 00:15:00 GMT" [3] "2009-03-23 00:30:00 GMT" "2009-03-23 00:45:00 GMT"
-
-Formulas
+```{r}
+seq(as.Date("1976-07-04"),by="days",length=10) 
+# 
+[1] "1976-07-04" "1976-07-05" "1976-07-06" "1976-07-07" "1976-07-08" 
+[6] "1976-07-09" "1976-07-10" "1976-07-11" "1976-07-12" "1976-07-13" 
+seq(as.Date("2000-06-01"),to=as.Date("2000-08-01"),by="2 weeks") 
+# 
+[1] "2000-06-01" "2000-06-15" "2000-06-29" "2000-07-13" "2000-07-27" 
+seq(as.POSIXct("2009-03-23 00:00:00", tz="GMT"), length=96, by="15 mins") 
+# 
+[1] "2009-03-23 00:00:00 GMT" "2009-03-23 00:15:00 GMT" 
+[3] "2009-03-23 00:30:00 GMT" "2009-03-23 00:45:00 GMT"
+```
+#### Formulas
 Formulas in R can be thought of as a "little language" since they obey a different structure and syntax from expressions. Expressions when evaluated produce some result such as a number, vector or list which is then displayed by the print function. Formulas on the other hand are used as a concise and intuitive way of specifying a statistical model. For example, consider a multiple linear regression of y on a numeric variable x1 and its squared value, x1^2 and a categorical variable x2. Note that in R categorical variables are called factors. This regression is specified by:
 y ~ x1 + I(x1^2) + x2
 and could be fit using the lm function (linear model, regression):
 lm(y ~ x1 + I(x1^2) + x2)
+
 In the formula notation, "~" means the left-hand-side is the independent variable or response and the right-hand-side are the dependent variables. The I(x1^2) means interpret the inside expression as a regular expression in R. Including a factor variable like x2 is very convenient since we don't have to be bothered about specifying all the indicator variables as we would have to do in other statistical software.
+
 [http://cran.r-project.org/doc/manuals/R-intro.html#Formulae-for-statistical-models Defining statistical models; formulae]
