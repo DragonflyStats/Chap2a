@@ -22,3 +22,11 @@
 * Problems of perfect prediction, separation or partial separation can occur in the logistic part of the zero-inflated model.
 * Count data often use exposure variables to indicate the number of times the event could have happened. You can incorporate a logged version of the exposure variable into your model by using the offset() option.
 * It is not recommended that zero-inflated Poisson models be applied to small samples. What constitutes a small sample does not seem to be clearly defined in the literature.
+
+### Zero-Inflated Negative Binomial Regression: Things to consider
+* Question about the over-dispersion parameter is in general a tricky one. A large over-dispersion parameter could be due to a miss-specified model or could be due to a real process with over-dispersion. Adding an over-dispersion problem does not necessarily improve a miss-specified model.
+* The zero inflated negative binomial model has two parts, a negative binomial count model and the logit model for predicting excess zeros, so you might want to review these Data Analysis Example pages, Negative Binomial Regression and Logit Regression.
+* Since zero inflated negative binomial has both a count model and a logit model, each of the two models should have good predictors. The two models do not necessarily need to use the same predictors.
+* Problems of perfect prediction, separation or partial separation can occur in the logistic part of the zero-inflated model.
+* Count data often use exposure variable to indicate the number of times the event could have happened. You can incorporate exposure (also called an offset) into your model by using the ``offset()`` function.
+* It is not recommended that zero-inflated negative binomial models be applied to small samples. What constitutes a small sample does not seem to be clearly defined in the literature.
