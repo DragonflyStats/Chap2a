@@ -30,3 +30,9 @@
 * Problems of perfect prediction, separation or partial separation can occur in the logistic part of the zero-inflated model.
 * Count data often use exposure variable to indicate the number of times the event could have happened. You can incorporate exposure (also called an offset) into your model by using the ``offset()`` function.
 * It is not recommended that zero-inflated negative binomial models be applied to small samples. What constitutes a small sample does not seem to be clearly defined in the literature.
+
+### Zero-Truncated Poisson Regression: things to consider
+* Count data often use exposure variable to indicate the number of times the event could have happened. 
+You can incorporate exposure into your model by using the ``exposure()`` option.
+* It is not recommended that zero-truncated poisson models be applied to small samples. 
+What constitutes a small sample does not seem to be clearly defined in the literature.
