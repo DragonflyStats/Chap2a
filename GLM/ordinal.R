@@ -4,24 +4,13 @@ require(MASS)
 require(Hmisc)
 require(reshape2)
 
-Version info: Code for this page was tested in R version 3.1.1 (2014-07-10) On: 2014-08-21 With: reshape2 1.4; Hmisc 3.14-4; Formula 1.1-2; survival 2.37-7; lattice 0.20-29; MASS 7.3-33; ggplot2 1.0.0; foreign 0.8-61; knitr 1.6
+ologit <- read.csv("https://raw.githubusercontent.com/RWorkshop/workshopdatasets/master/ologit.csv")
+
+head(ologit,2)
 
 Please note: The purpose of this page is to show how to use various data analysis commands. It does not cover all aspects of the research process which researchers are expected to do. In particular, it does not cover data cleaning and checking, verification of assumptions, model diagnostics or potential follow-up analyses.
 
 
-Description of the Data
-For our data analysis below, we are going to expand on Example 3 about applying to graduate school. We have simulated some data for this example and it can be obtained from our website:
-
-dat <- read.dta("https://stats.idre.ucla.edu/stat/data/ologit.dta")
-head(dat)
-##             apply pared public  gpa
-## 1     very likely     0      0 3.26
-## 2 somewhat likely     1      0 3.21
-## 3        unlikely     1      1 3.94
-## 4 somewhat likely     0      0 2.81
-## 5 somewhat likely     0      0 2.53
-## 6        unlikely     0      1 2.59
-This hypothetical data set has a three level variable called apply, with levels “unlikely”, “somewhat likely”, and “very likely”, coded 1, 2, and 3, respectively, that we will use as our outcome variable. We also have three variables that we will use as predictors: pared, which is a 0/1 variable indicating whether at least one parent has a graduate degree; public, which is a 0/1 variable where 1 indicates that the undergraduate institution is public and 0 private, and gpa, which is the student’s grade point average. Let’s start with the descriptive statistics of these variables.
 
 ## one at a time, table apply, pared, and public
 lapply(dat[, c("apply", "pared", "public")], table)
