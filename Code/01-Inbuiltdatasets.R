@@ -31,6 +31,14 @@ glimpse(mtcars)
 
 #############
 
+mpgmodel <- lm(mpg ~ cyl + wt, data =mtcars)
+
+summary(mpgmodel)
+
+class(mpgmodel)
+
+#############
+
 summary(airquality)
 
 # notice the NAs.
