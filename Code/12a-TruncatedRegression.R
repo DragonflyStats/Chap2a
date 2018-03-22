@@ -1,10 +1,4 @@
 
-install.packages("truncreg")
-require(foreign)
-require(ggplot2)
-require(truncreg)
-require(boot)
-
 
 dat <- read.dta("https://stats.idre.ucla.edu/stat/data/truncreg.dta")
 
