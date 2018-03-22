@@ -17,9 +17,13 @@ library(dplyr)
 library(tidyr)
 library(magrittr)
 library(readr)
+library(ggplot2)
 
 library(broom)       # tidy stats output
 library(modelr)      # RMSE etc
+
+library(outliers)    # Testing Outliers
+library(nortest)     # Testing Normality
 
 library(MethComp)    # Deming Regression. Also we are going to use a dataset from these package.
 library(MASS)        # important functions for modelling contained here
