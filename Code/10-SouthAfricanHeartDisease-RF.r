@@ -1,11 +1,4 @@
 
-install.packages("randomForest")
-
-library(randomForest)
-
-install.packages("ElemStatLearn")
-
-library(ElemStatLearn)
 data(SAheart )
 
 help(SAheart)
