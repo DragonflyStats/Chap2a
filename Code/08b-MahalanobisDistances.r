@@ -24,6 +24,4 @@ head(df)
 df$outlier_maha <- FALSE
 df$outlier_maha[df$MD > 10] <- TRUE
 
-
-
 head(df)
