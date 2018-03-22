@@ -1,6 +1,8 @@
 #using the pima dataset
 data(pima, package="faraway")
+
 b <- factor(pima$test)
+
 #train a model which fits b according to two variables: diastolic and bmi
 m <- glm(b ~ diastolic + bmi, family=binomial, data=pima)
 summary(m)
