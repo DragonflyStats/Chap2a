@@ -3,11 +3,9 @@ require(ggplot2)
 require(GGally)
 require(survival)
 require(rgl)
-Version info: Code for this page was tested in R Under development (unstable) (2012-11-16 r61126)
-On: 2012-12-15
-With: rgl 0.92.894; survival 2.36-14; GGally 0.4.2; reshape 0.8.4; plyr 1.8; ggplot2 0.9.3; foreign 0.8-51; knitr 0.9
 
-Please note: The purpose of this page is to show how to use various data analysis commands. It does not cover all aspects of the research process which researchers are expected to do. In particular, it does not cover data cleaning and checking, verification of assumptions, model diagnostics or potential follow-up analyses.
+######################################################
+
 dat <- read.dta("https://stats.idre.ucla.edu/stat/data/intreg_data.dta")
 
 # summary of the variables
@@ -28,8 +26,10 @@ summary(dat)
 ## 
 # bivariate plots
 ggpairs(dat[, -1], lower = list(combo = "box"), upper = list(combo = "blank"))
-plot of chunk unnamed-chunk-3
-Note that there are two GPA responses for each observation, lgpa for the lower end of the interval and ugpa for the upper end. We can compare the means of the variables by each type of program using by.
+##########################################################################
+
+# Note that there are two GPA responses for each observation, lgpa for the lower end of the interval and ugpa for the upper end. 
+# We can compare the means of the variables by each type of program using by.
 
 by(dat[, 2:5], dat$type, colMeans, na.rm = TRUE)
 ## dat$type: vocational
@@ -44,10 +44,14 @@ by(dat[, 2:5], dat$type, colMeans, na.rm = TRUE)
 ##    lgpa    ugpa   write  rating 
 ##   3.017   3.417 113.333  61.500
 Analysis methods you might consider
-Below is a list of some analysis methods you may have encountered. Some of the methods listed are quite reasonable, while others have either fallen out of favor or have limitations.
+Below is a list of some analysis methods you may have encountered. 
+Some of the methods listed are quite reasonable, while others have either fallen out of favor or have limitations.
 
 Interval regression
-We will use the survival package to run the interval regression. First we setup a survival object that contains the censored intervals using the Surv function. Note the special event status code, 3, used for all observations indicating that all had interval censoring. Then we estimate the model using the survreg function.
+We will use the survival package to run the interval regression. 
+First we setup a survival object that contains the censored intervals using the Surv function. 
+Note the special event status code, 3, used for all observations indicating that all had interval censoring. 
+Then we estimate the model using the survreg function.
 
 # setup the survival object with interval censoring
 (Y <- with(dat, Surv(lgpa, ugpa, event = rep(3, nrow(dat)), type = "interval")))
