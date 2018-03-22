@@ -1,35 +1,42 @@
 #Install some R packages
 
-
+# install.packages("tidyverse")
 install.packages("randomForest")
 install.packages("mlbench")
 install.packages("ElemStatLearn")
 
-
-
-
-
-
+# Regression Packages
+install.packages("truncreg")   #Truncated Regression
+install.packages("car")        #Model Diagnostics
 #######################################################
 
 # tidyverse packages
 library(dplyr)
-library(tidyr)
-library(magrittr)
-library(readr)
-library(ggplot2)
+library(tidyr)       # Spread and Gather commands
+library(magrittr)    # %>% Pipe operator
+library(purrr)       # Map Function
+library(readr)       # importing Data Sets
+library(ggplot2)     # Graphs + diamonds data set 
 
 library(broom)       # tidy stats output
-library(modelr)      # RMSE etc
+library(modelr)      # RMSE, Rsquare etc
 
-library(outliers)    # Testing Outliers
-library(nortest)     # Testing Normality
+library(foreign)     # Importing Data (stata files)
+
+library(outliers)    # Testing Outliers (Grubbs Test for outliers)
+library(nortest)     # Testing Normality (Anderson Darling Test)
 
 library(MethComp)    # Deming Regression. Also we are going to use a dataset from these package.
 library(MASS)        # important functions for modelling contained here
-library(randomForest)
+library(randomForest)   # Random Forest Command
 library(ElemStatLearn)  # Data Sets
 library(mlbench)        # Sonar data set 
+
+library(truncreg)       # Truncated Regression
+library(glm2)           # Poisson Regression + crabs data
+library(faraway)        # Pima diabetes data set
+
+library(boot)
 
 
 ####### Data Sets ####
