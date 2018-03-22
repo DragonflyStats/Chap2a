@@ -1,6 +1,12 @@
 #Install some R packages
 
 
+install.packages("randomForest")
+install.packages("mlbench")
+install.packages("ElemStatLearn")
+
+
+
 
 
 
@@ -12,11 +18,15 @@ library(tidyr)
 library(magrittr)
 library(readr)
 
-library(broom)
-library(modelr)
+library(broom)       # tidy stats output
+library(modelr)      # RMSE etc
 
-library(MethComp)    # We are going to use a dataset from this package.
+library(MethComp)    # Deming Regression. Also we are going to use a dataset from these package.
 library(MASS)        # important functions for modelling contained here
+library(randomForest)
+library(ElemStatLearn)  # Data Sets
+library(mlbench)        # Sonar data set 
+
 
 ####### Data Sets ####
 
