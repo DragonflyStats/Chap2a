@@ -1,5 +1,8 @@
 #Install some R packages
-
+install.packages(c("modelr","broom","VGAM","magrittr","WVPlots","MethComp"))
+install.packages(c("pscl","nnet"))
+install.packages(c("glm2","faraway","boot"))
+install.packages(c("outliers","nortest"))
 # install.packages("tidyverse")
 install.packages("randomForest")
 install.packages("mlbench")
