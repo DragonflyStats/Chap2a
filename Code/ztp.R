@@ -1,5 +1,6 @@
-ZERO-TRUNCATED POISSON | R DATA ANALYSIS EXAMPLES
-Zero-truncated poisson regression is used to model count data for which the value zero cannot occur.
+## ZERO-TRUNCATED POISSON 
+
+## Zero-truncated poisson regression is used to model count data for which the value zero cannot occur.
 
 This page uses the following packages. Make sure that you can load them before trying to run the examples on this page. If you do not have a package installed, run: install.packages("packagename"), or if you see the version is out of date, run: update.packages().
 
@@ -7,12 +8,12 @@ require(foreign)
 require(ggplot2)
 require(VGAM)
 require(boot)
-Version info: Code for this page was tested in R Under development (unstable) (2012-11-16 r61126) On: 2012-12-15 With: boot 1.3-7; VGAM 0.9-0; ggplot2 0.9.3; foreign 0.8-51; knitr 0.9
 
 Please Note: The purpose of this page is to show how to use various data analysis commands. It does not cover all aspects of the research process which researchers are expected to do. In particular, it does not cover data cleaning and verification, verification of assumptions, model diagnostics and potential follow-up analyses.
 
 Examples of zero-truncated Poisson regression
-Example 1. A study of length of hospital stay, in days, as a function of age, kind of health insurance and whether or not the patient died while in the hospital. Length of hospital stay is recorded as a minimum of at least one day.
+Example 1. A study of length of hospital stay, in days, as a function of age, kind of health insurance and 
+whether or not the patient died while in the hospital. Length of hospital stay is recorded as a minimum of at least one day.
 
 Example 2. A study of the number of journal articles published by tenured faculty as a function of discipline (fine arts, science, social science, humanities, medical, etc). To get tenure faculty must publish, therefore, there are no tenured faculty with zero publications.
 
@@ -21,7 +22,9 @@ Example 3. A study by the county traffic court on the number of tickets received
 Description of the data
 Let’s pursue Example 1 from above.
 
-We have a hypothetical data file, ztp.dta with 1,493 observations. The length of hospital stay variable is stay. The variable age gives the age group from 1 to 9 which will be treated as interval in this example. The variables hmo and died are binary indicator variables for HMO insured patients and patients who died while in the hospital, respectively.
+We have a hypothetical data file, ztp.dta with 1,493 observations. The length of hospital stay variable is stay. 
+The variable age gives the age group from 1 to 9 which will be treated as interval in this example. 
+The variables hmo and died are binary indicator variables for HMO insured patients and patients who died while in the hospital, respectively.
 
 Let’s look at the data. We import the Stata dataset using the foreign package.
 
@@ -40,6 +43,7 @@ summary(dat)
 ##  Mean   : 9.73   Mean   :5.23                   
 ##  3rd Qu.:13.00   3rd Qu.:6.00                   
 ##  Max.   :74.00   Max.   :9.00
+
 Now let’s look at some graphs of the data conditional on various combinations of the variables to get a sense of how the variables work together. We will use the ggplot2 package. First we can look at histograms of stay broken down by hmo on the rows and died on the columns. We also include the marginal distributions, thus the lower right corner represents the overall histogram. We use a log base 10 scale to approximate the canonical link function of the poisson distribution (natural logarithm).
 
 ggplot(dat, aes(stay)) +
